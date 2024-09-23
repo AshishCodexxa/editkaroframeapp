@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sweet="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:background="@color/cardbgColor">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/buisimages" />
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_rounded"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="3sp"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Personal Frame"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--calla and number-->
+
+
+        <!--mail and website-->
+
+
+        <!--social icon-->
+
+        <LinearLayout
+            android:id="@+id/linearWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_website"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/insta" />
+
+            <TextView
+                android:id="@+id/tv_instausername_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2sp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="sakhir2033"
+                android:textColor="@color/al_white"
+                android:textSize="7sp" />
+
+            <ImageView
+                android:id="@+id/iv_phone_personal"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="5sp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/tv_facebookusername_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2sp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="sangharsh"
+                android:textColor="@color/al_white"
+                android:textSize="7sp" />
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="6sp"
+                android:layout_height="6sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1px"
+                android:background="@drawable/call"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1sp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="+911234567890"
+                android:textColor="@color/white"
+                android:textSize="6sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/iv_mail"
+                android:layout_width="10sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_mail"
+                sweet:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_email_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2sp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:maxLines="1"
+                android:text="editkaro@gmail.com"
+                android:textColor="@color/al_white"
+                android:textSize="7sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="10sp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_address"
+                sweet:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1sp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:maxLines="1"
+                android:text="editkaro@gmail.com"
+                android:textColor="@color/al_white"
+                android:textSize="7sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

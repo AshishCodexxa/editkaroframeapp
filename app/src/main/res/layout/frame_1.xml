@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -11,53 +10,33 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="420dp"
         android:layout_height="400dp"
-        android:gravity="center"
-        android:background="@color/browser_actions_bg_grey">
-<!--        android:background="@drawable/background_layout"-->
-<!--        >-->
-
-
-<!--        <TextView
-            android:id="@+id/bname"
-            android:layout_width="255dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="Hiii"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:fontWeight="700"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.102"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/browser_actions_bg_grey"
+        android:gravity="center">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            app:cardCornerRadius="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/cardView3"
+            android:layout_width="129dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.051">
+            app:layout_constraintVertical_bias="1.0">
 
             <ImageView
-                android:id="@+id/iv_logo"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:id="@+id/iv_logo1"
+                android:layout_width="129dp"
+                android:layout_height="150dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/buisimages" />
-        </androidx.cardview.widget.CardView>-->
-
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:id="@+id/linearLayout6"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginBottom="10dp"
             android:background="@color/white"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -67,34 +46,190 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="80dp">
-
-                <ImageView
-                    android:id="@+id/iv_logo"
-                    android:layout_width="39dp"
-                    android:layout_height="40dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/buisimages"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-                    app:layout_constraintHorizontal_bias="0.04"
-                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.5" />
 
                 <View
                     android:id="@+id/view"
-                    android:layout_width="1dp"
-                    android:layout_height="45dp"
-                    android:layout_marginBottom="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
                     android:background="@android:color/holo_blue_light"
-                    app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
-                    app:layout_constraintHorizontal_bias="0.028"
-                    app:layout_constraintStart_toEndOf="@+id/iv_logo" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardBackgroundColor="@color/green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.044"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/iv_logo"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/buisimages" />
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="120dp"
+                    android:layout_height="54dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.252"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!--website-->
+
+
+                    <LinearLayout
+                        android:layout_width="111dp"
+                        android:layout_height="17dp">
+
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:elevation="2dp"
+                            android:src="@drawable/facebook" />
+
+                        <TextView
+                            android:id="@+id/bwebsite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:text="www.editkaro.com"
+                            android:textColor="@color/black"
+                            android:textFontWeight="500"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+
+                    <!--mail-->
+
+                    <LinearLayout
+                        android:layout_width="111dp"
+                        android:layout_height="17dp">
+
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:elevation="2dp"
+                            android:src="@drawable/insta" />
+
+                        <TextView
+                            android:id="@+id/insta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:text="www.editkaro.com"
+                            android:textColor="@color/black"
+                            android:textFontWeight="500"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <!--mail-->
+
+                    <LinearLayout
+                        android:layout_width="111dp"
+                        android:layout_height="17dp">
+
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_gravity="center_vertical"
+                            android:elevation="2dp"
+                            android:src="@drawable/twitter" />
+
+                        <TextView
+                            android:id="@+id/twitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:text="www.editkaro.com"
+                            android:textColor="@color/black"
+                            android:textFontWeight="500"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
                 <TextView
+                    android:id="@+id/bname"
+                    android:layout_width="162dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="सुमित जाधव"
+                    android:textColor="@color/green"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:fontWeight="700"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.542"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bname1"
+                    android:layout_width="162dp"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="सुमित जाधव"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.542"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+                    app:layout_constraintTop_toBottomOf="@+id/bname"
+                    app:layout_constraintVertical_bias="0.45" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:background="@android:color/holo_blue_light"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!-- <TextView
                     android:id="@+id/bname"
                     android:layout_width="220dp"
                     android:layout_height="25dp"
@@ -124,11 +259,11 @@
                     app:layout_constraintHorizontal_bias="0.512"
                     app:layout_constraintStart_toEndOf="@+id/view"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.68" />
+                    app:layout_constraintVertical_bias="0.68" />-->
 
-                <LinearLayout
+                <!--<LinearLayout
                     android:id="@+id/linearLayout2"
-                    android:layout_width="300dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:layout_gravity="bottom"
                     android:background="@color/blue_700"
@@ -148,7 +283,7 @@
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent">
 
-                        <!--calla and number-->
+                        &lt;!&ndash;calla and number&ndash;&gt;
 
                         <LinearLayout
                             android:layout_width="130dp"
@@ -157,7 +292,7 @@
                             android:orientation="vertical">
 
 
-                            <!--address-->
+                            &lt;!&ndash;address&ndash;&gt;
 
 
                             <LinearLayout
@@ -190,7 +325,7 @@
                             </LinearLayout>
 
 
-                            <!--call-->
+                            &lt;!&ndash;call&ndash;&gt;
 
                             <LinearLayout
                                 android:layout_width="80dp"
@@ -222,7 +357,7 @@
 
                         </LinearLayout>
 
-                        <!--social icon-->
+                        &lt;!&ndash;social icon&ndash;&gt;
 
 
                         <LinearLayout
@@ -261,7 +396,7 @@
 
                         </LinearLayout>
 
-                        <!--mail and website-->
+                        &lt;!&ndash;mail and website&ndash;&gt;
 
                         <LinearLayout
                             android:layout_width="150dp"
@@ -273,7 +408,7 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-                            <!--website-->
+                            &lt;!&ndash;website&ndash;&gt;
 
 
                             <LinearLayout
@@ -303,7 +438,7 @@
                             </LinearLayout>
 
 
-                            <!--mail-->
+                            &lt;!&ndash;mail&ndash;&gt;
 
                             <LinearLayout
                                 android:layout_width="140dp"
@@ -338,25 +473,12 @@
 
                     </LinearLayout>
 
-                </LinearLayout>
+                </LinearLayout>-->
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/iv_logo"
-            android:layout_width="93dp"
-            android:layout_height="100dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/buisimages"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout6"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.966" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

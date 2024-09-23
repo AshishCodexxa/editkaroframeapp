@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameNew"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:tag="layout/political_frame_1_0">
+
+    <FrameLayout
+        android:id="@+id/fl_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginVertical="10dp">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="10sp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/iv_poli_profile"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="10sp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/iv_photo_a"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="4sp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="150dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_logo_close"
+            android:layout_width="10sp"
+            android:layout_height="10sp"
+            android:layout_gravity="top|left|center_vertical|center_horizontal|center|start"
+            android:elevation="1dp"
+            android:src="@drawable/ic_remove"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6sp"
+        android:background="#ffc107" />
+
+    <ImageView
+        android:layout_width="90sp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left|center_vertical|center_horizontal|center|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_poli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="sangharsh"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_designation_poli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="sangharsh"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/btn_rounded"
+            android:backgroundTint="@color/orange_700"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="2sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="2sp"
+            android:tint="@color/orange_700">
+
+            <FrameLayout
+                android:id="@+id/fl_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3sp">
+
+                <LinearLayout
+                    android:id="@+id/linearWebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_website"
+                        android:layout_width="10sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/insta" />
+
+                    <TextView
+                        android:id="@+id/tv_instausername_poli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2sp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="sakhir2033"
+                        android:textColor="@color/al_white"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_website_close"
+                    android:layout_width="5sp"
+                    android:layout_height="5sp"
+                    android:layout_gravity="top|left|center_vertical|center_horizontal|center|start"
+                    android:elevation="1dp"
+                    android:src="@drawable/ic_remove"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_phone_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_width="10sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3sp"
+                        android:src="@drawable/facebook" />
+
+                    <TextView
+                        android:id="@+id/tv_facebookusername_poli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2sp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="sangharsh"
+                        android:textColor="@color/al_white"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_phone_close_1"
+                    android:layout_width="5sp"
+                    android:layout_height="5sp"
+                    android:layout_gravity="top|left|center_vertical|center_horizontal|center|start"
+                    android:elevation="1dp"
+                    android:src="@drawable/ic_remove"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearPhone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_"
+                        android:layout_width="10sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="3sp"
+                        android:src="@drawable/ic_contact"
+                        sweet:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_phonenum_poli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2sp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:text="(+91 3344552233)"
+                        android:textColor="@color/al_white"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_phone_close"
+                    android:layout_width="5sp"
+                    android:layout_height="5sp"
+                    android:layout_gravity="top|left|center_vertical|center_horizontal|center|start"
+                    android:elevation="1dp"
+                    android:src="@drawable/ic_remove"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_address"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ffc107"
+            android:paddingTop="2sp"
+            android:paddingBottom="2sp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linearAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_address"
+                    android:layout_width="10sp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2sp"
+                    android:src="@drawable/ic_address"
+                    sweet:tint="@color/al_white" />
+
+                <TextView
+                    android:id="@+id/tv_address_poli"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2sp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical|center_horizontal|center"
+                    android:maxLines="1"
+                    android:text="84 Vivekananda Park, Sardar Nagar"
+                    android:textColor="@color/al_white"
+                    android:textSize="7sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_address_close"
+                android:layout_width="5sp"
+                android:layout_height="5sp"
+                android:layout_gravity="top|left|center_vertical|center_horizontal|center|start"
+                android:elevation="1dp"
+                android:src="@drawable/ic_remove"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
+

@@ -10,7 +10,7 @@ android:toDegrees="90">
         android:width="640dp"
         android:height="640dp"
         android:viewportWidth="200"
-        android:viewportHeight="1000">
+        android:viewportHeight="600">
 
 
         <path

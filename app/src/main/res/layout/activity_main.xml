@@ -7,6 +7,6 @@
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/buiseness3"/>
+        layout="@layout/personal_frame"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
